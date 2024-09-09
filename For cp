@@ -53,6 +53,75 @@ const int fxx[8][2] = {{0,1}, {0,-1}, {1,0}, {-1,0}, {1,1}, {1,-1}, {-1,1}, {-1,
 using namespace __gnu_pbds;
 using namespace std;
 template <typename T> using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree_order_statistics_node_update>;
+ //Divisors 
+//vector<int> divisors(int n)
+//  {
+//      vector<int> x;
+//      for (int i = 1; 1ll * i * i <= n; i++)
+//      {
+//          if (n % i == 0)
+//          {
+//              x.push_back(i);
+//              if (n / i != i)
+//                  x.push_back(n / i);
+//          }
+//      }
+//       sort(x.begin(), x.end());
+//      return x;
+//  }
+ 
+// Sieve of Eratosthenes
+// vector<int> isprime(int n)
+// {
+//     vector<bool> prime(n + 1, true);
+//     prime[0] = prime[1] = false; // 0 and 1 are not prime numbers
+//     for (int i = 2; i * i <= n; i++)
+//     {
+//         if (prime[i])
+//         {
+//             for (int j = i * i; j <= n; j += i)
+//             {
+//                 prime[j] = false;
+//             }
+//         }
+//     }
+//     vector<int> primes;
+//     for (int i = 2; i <= n; i++)
+//     {
+//         if (prime[i])
+//         {
+//             primes.push_back(i);
+//         }
+//     }
+//     return primes;
+// }
+ 
+//Prime Factorization
+    // map<int, int> m;
+    // for (int i = 2; i * i <= n; i++)
+    // {
+    //     if (n % i == 0)
+    //     {
+    //         while (n % i == 0)
+    //         {
+    //             m[i]++;
+    //             n /= i;
+    //         }
+    //     }
+    // }
+    // if (n > 1)
+    //     m[n]++;
+ 
+//Check Prime
+//bool isprime(int N){
+    //if(N<2 || (!(N&1) && N!=2))
+        //return false;
+   // for(int i=3; i*i<=N; i+=2){
+        //if(!(N%i))
+           // return false;
+   // }
+   // return true;
+//}
  
 void solve() {
     
