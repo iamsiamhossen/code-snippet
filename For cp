@@ -123,6 +123,12 @@ template <typename T> using pbds = tree<T, null_type, less<T>, rb_tree_tag, tree
    // return true;
 //}
  
+//LCM
+// int lcm(int x1, int x2)
+// {
+//     return ((x1 * x2) / __gcd(x1, x2));
+// }
+ 
 void solve() {
     
 }
